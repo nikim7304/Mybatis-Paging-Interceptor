@@ -7,7 +7,8 @@ import com.example.demo.config.mybatis.interceptor.QueryInterceptor;
 
 @Configuration
 public class MybatisConfig {
-  
+
+  /*
   @Bean
   public PreparetInterceptor preparetInterceptor() {
     return new PreparetInterceptor();
@@ -16,5 +17,11 @@ public class MybatisConfig {
   @Bean
   public QueryInterceptor queryInterceptor() {
     return new QueryInterceptor();
+  }
+  */
+
+  @Bean
+  public PagingInterceptor pagingInterceptor() {
+    return new PagingInterceptor();
   }
 }
